@@ -1,1 +1,217 @@
 # resume
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-size: 1.1em;
+        }
+
+        h1, h2, h5 {
+            font-size: 1.8em;
+        }
+
+        p, .card-text, .form-label {
+            font-size: 1.15em;
+        }
+
+        .custom-brand-font {
+            font-size: 1.7em !important;
+        }
+
+        .custom-section-heading {
+            font-size: 2.5em !important;
+        }
+
+        .gallery-toggle-label {
+            font-size: 1.5em;
+        }
+
+        #name, #email, #message {
+            font-size: 1.1em;
+        }
+
+        /* Hero section specific styles */
+        #hero {
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image-fullscreen {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            max-width: 80%;
+        }
+
+        #hero .custom-section-heading {
+            font-size: 4em !important;
+            margin-bottom: 0.5em !important;
+        }
+
+        #hero p.text-muted {
+            font-size: 1.8em !important;
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+
+        /* Gallery section background image */
+        #gallery {
+            background-image: url('https://i.pinimg.com/736x/6e/b0/f6/6eb0f6787ba99629aec30ca8517f37c7.jpg');
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Keep image fixed when scrolling */
+            color: #ffffff; /* Change text color for better contrast on dark background */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Add text shadow for readability */
+        }
+
+        /* Adjustments for content within gallery to ensure readability */
+        #gallery .card {
+            background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white background for cards */
+            color: #333; /* Darker text color for cards */
+        }
+
+        #gallery .gallery-toggle-label {
+            color: #ffffff; /* Ensure toggle labels are visible */
+        }
+
+
+        /* Responsive adjustments for smaller screens (hero section) */
+        @media (max-width: 768px) {
+            #hero .custom-section-heading {
+                font-size: 2.5em !important;
+            }
+
+            #hero p.text-muted {
+                font-size: 1.2em !important;
+            }
+
+            .hero-content {
+                max-width: 90%;
+            }
+        }
+
+        /* Adjustments for even smaller screens (hero section) */
+        @media (max-width: 576px) {
+            #hero .custom-section-heading {
+                font-size: 2em !important;
+            }
+
+            #hero p.text-muted {
+                font-size: 1em !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand custom-brand-font" href="#">Shane Justine Rodriguez</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="text-center">
+        <div class="hero-content">
+            <h2 class="mb-3 custom-section-heading">Welcome to My resume</h2>
+        </div>
+        <img src="me.jpg" class="hero-image-fullscreen" alt="Cycling Hero Image">
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="custom-section-heading">About Me</h2>
+                    <p>"My name is <b>Shane Justine Rodriguez</b>, and I'm 18 years old, celebrating my birthday on July 9, 2006.im catolic
+                </div>
+                <div class="col-md-6">
+                    <img src="meee.jpg" class="img-fluid rounded portrait-img" alt="About Cycling">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 custom-section-heading">Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="racing highlights.jpg" class="card-img-top" alt="Cycling Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">NUmber</h5>
+                            <p class="card-text">"My <b>+639912239551</b> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="tour.jpg" class="card-img-top" alt="Cycling Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Email</h5>
+                            <p class="card-text"> <b>iamastroboy05@gmail.com</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="skill.jpg" class="card-img-top" alt="Cycling Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Address</h5>
+                            <p class="card-text"><b>28 azucena st malabon longos</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <b>skills showcase</b> </p>
+    <b>communicatiom</b>
+    <b>responsivility</b>
+    <b>teamwork</b>
